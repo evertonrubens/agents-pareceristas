@@ -1,0 +1,188 @@
+# ============================================================
+# .gitignore
+# Projeto Python / Agents / IA / Confluence / VS Code
+# ============================================================
+
+# ------------------------------------------------------------
+# Ambientes virtuais Python
+# ------------------------------------------------------------
+env/
+ENV/
+venv/
+VENV/
+.venv/
+.python-version
+
+# ------------------------------------------------------------
+# Variáveis de ambiente, segredos e credenciais locais
+# ATENÇÃO: nunca versionar tokens, senhas, chaves ou arquivos .env
+# ------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+credentials.json
+service-account.json
+google-credentials.json
+aws-credentials.json
+
+# ------------------------------------------------------------
+# Cache e arquivos compilados do Python
+# ------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+.cache/
+
+# ------------------------------------------------------------
+# Builds, distribuição e metadados de pacote Python
+# ------------------------------------------------------------
+build/
+dist/
+downloads/
+backup/
+docs/
+skills/
+src/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ------------------------------------------------------------
+# Jupyter / notebooks
+# ------------------------------------------------------------
+.ipynb_checkpoints/
+
+# ------------------------------------------------------------
+# Logs e arquivos temporários
+# ------------------------------------------------------------
+logs/
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*.orig
+*.old
+*.pid
+
+# ------------------------------------------------------------
+# Saídas geradas pela aplicação
+# Ajuste conforme a estrutura real do projeto
+# ------------------------------------------------------------
+out/
+output/
+outputs/
+docs-out/
+reports/
+relatorios/
+generated/
+artifacts/
+tmp/
+temp/
+
+# ------------------------------------------------------------
+# Arquivos de sistema operacional
+# ------------------------------------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ------------------------------------------------------------
+# VS Code e extensões
+# ------------------------------------------------------------
+.vscode-test/
+.history/
+*.code-workspace
+
+# Mantém configurações úteis do VS Code versionáveis, se existirem.
+# Caso queira ignorar tudo do VS Code, descomente a linha abaixo:
+# .vscode/
+
+# Ignorar somente temporários/logs dentro do VS Code
+.vscode/*.log
+.vscode/*.tmp
+.vscode/*.bak
+
+# ------------------------------------------------------------
+# IDEs diversas
+# ------------------------------------------------------------
+.idea/
+*.iml
+
+# ------------------------------------------------------------
+# Node / Frontend, caso o projeto tenha UI
+# ------------------------------------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.next/
+.nuxt/
+dist-ssr/
+coverage/
+
+# ------------------------------------------------------------
+# Docker / Compose locais
+# ------------------------------------------------------------
+.docker/
+docker-compose.override.yml
+
+# ------------------------------------------------------------
+# Terraform, caso o projeto use IaC
+# ------------------------------------------------------------
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraform.lock.hcl
+
+# ------------------------------------------------------------
+# Arquivos grandes ou locais de modelos/datasets
+# Descomente se o projeto usar IA/ML localmente
+# ------------------------------------------------------------
+# models/
+# datasets/
+# data/
+# *.pt
+# *.pth
+# *.onnx
+# *.h5
+# *.keras
+# *.pkl
+# *.joblib
